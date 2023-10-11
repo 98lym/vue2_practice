@@ -1,0 +1,11 @@
+# 忽略build目录下类型为js的文件的语法检查
+build/*.js
+lib/**/*.js
+# 忽略src/assets目录下文件的语法检查
+src/assets
+src/font
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/dist
