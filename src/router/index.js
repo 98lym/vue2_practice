@@ -14,6 +14,10 @@ const routes = [
     path: '/todoList',
     component: () => import('@/views/todoList'),
   },
+  {
+    path: '/goECharts',
+    component: () => import('@/views/eCharts'),
+  },
 ]
 
 const router = new VueRouter({

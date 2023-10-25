@@ -1,16 +1,54 @@
 <template>
-  <div>
-    <button @click="goTodoList">goTodoList</button>
+  <div class="home">
+    <div class="modules" @click="goModules('todoList')">goTodoList</div>
+    <div class="modules" @click="goModules('goECharts')">eCharts</div>
   </div>
 </template>
 <script>
 export default {
   name: 'Home_',
   methods: {
-    goTodoList() {
-      this.$router.push('./todoList')
+    goModules(path) {
+    this.$router.push(`./${path}`)
     },
   },
 }
 </script>
-<style lang="scss" scope></style>
+<style lang="scss" scope>
+.home {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box; // 将 padding 和 border 包含在元素的总宽度和高度内，从而不影响元素的大小
+  padding: 20px;
+  background: url('@/assets/ceremonial2.jpg') no-repeat;
+  background-size: 100%;
+  .modules {
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color: skyblue;
+    z-index: 99;
+  }
+  .modules:hover {
+    box-shadow: 2px 2px 4px 2px black ;
+  }
+}
+// TODO: 背景磨砂效果
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('@/assets/ceremonial2.jpg') no-repeat;
+  background-size: 100%;
+  filter: blur(8px);
+  opacity: 0.6;
+}
+</style>
