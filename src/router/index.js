@@ -15,8 +15,28 @@ const routes = [
     component: () => import('@/views/todoList'),
   },
   {
-    path: '/goECharts',
+    path: '/frostedMirror',
+    component: () => import('@/views/frostedMirror'),
+  },
+  {
+    path: '/eCharts',
     component: () => import('@/views/eCharts'),
+    children: [
+      {
+        path: '',
+        redirect: 'smoothedLineChart',
+      },
+      {
+        path: 'smoothedLineChart',
+        name: 'smoothedLineChart',
+        component: () => import('@/views/eCharts/components/SmoothedLineChart'),
+      },
+      {
+        path: 'roundedRingDiagram',
+        name: 'roundedRingDiagram',
+        component: () => import('@/views/eCharts/components/RoundedRingDiagram'),
+      },
+    ],
   },
 ]
 
