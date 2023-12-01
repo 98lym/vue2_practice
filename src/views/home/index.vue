@@ -1,15 +1,20 @@
 <template>
   <div class="home">
-    <div class="modules" @click="goModules('todoList')">goTodoList</div>
-    <div class="modules" @click="goModules('goECharts')">eCharts</div>
+    <div class="modules" v-for="{ key, name } in routers" :key="key" @click="goModules(name)">{{ name }}</div>
   </div>
 </template>
 <script>
+import { routers } from './config'
 export default {
   name: 'Home_',
+  data() {
+    return {
+      routers,
+    }
+  },
   methods: {
     goModules(path) {
-    this.$router.push(`./${path}`)
+      this.$router.push(`./${path}`)
     },
   },
 }
@@ -35,12 +40,12 @@ export default {
     z-index: 99;
   }
   .modules:hover {
-    box-shadow: 2px 2px 4px 2px black ;
+    box-shadow: 2px 2px 4px 2px black;
   }
 }
 // TODO: 背景磨砂效果
 .home::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
