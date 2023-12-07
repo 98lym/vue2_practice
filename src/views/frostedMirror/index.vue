@@ -28,14 +28,14 @@ export default {
   },
   methods: {
     stopVideo() {
-      const stream = this.video.srcObject
-      const tracks = stream.getTracks()
-
-      // 停止所有轨道
-      tracks.forEach((track) => track.stop())
-
-      // 清空视频srcObject
-      this.video.srcObject = null
+      if (this.video && this.video.srcObject) {
+        const stream = this.video.srcObject
+        const tracks = stream.getTracks()
+        // 停止所有轨道
+        tracks.forEach((track) => track.stop())
+        // 清空视频srcObject
+        this.video.srcObject = null
+      }
     },
   },
   beforeRouteLeave(to, from, next) {
@@ -48,12 +48,16 @@ export default {
 }
 </script>
 <style lang="scss" scope>
-#video {
-  width: 300px;
-  height: 100px;
-  object-fit: cover;
-  filter: blur(2px) saturate(0.6) brightness(1.1);
-  object-position: 0 -100px;
-  transform: scaleX(-1);
+#frostedMirror {
+  display: flex;
+  justify-content: center;
+  #video {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    filter: blur(2px) saturate(0.6) brightness(1.1);
+    object-position: 0 -100px;
+    transform: scaleX(-1);
+  }
 }
 </style>
