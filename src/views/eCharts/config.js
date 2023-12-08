@@ -14,4 +14,14 @@ export const routers = [
     name: 'roundedRingDiagram',
     implication: '👉 roundedRingDiagram',
   },
+  {
+    key: 3,
+    name: 'dualXAxisDualLineChart',
+    implication: '👉 双x轴双折线图',
+  },
+  {
+    key: 4,
+    name: 'singleXAxisDualLineChart',
+    implication: '👉 单x轴双折线图',
+  },
 ]

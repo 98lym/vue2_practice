@@ -36,6 +36,16 @@ const routes = [
         name: 'roundedRingDiagram',
         component: () => import('@/views/eCharts/components/RoundedRingDiagram'),
       },
+      {
+        path: 'dualXAxisDualLineChart',
+        name: 'dualXAxisDualLineChart',
+        component: () => import('@/views/eCharts/components/DualXAxisDualLineChart'),
+      },
+      {
+        path: 'singleXAxisDualLineChart',
+        name: 'singleXAxisDualLineChart',
+        component: () => import('@/views/eCharts/components/SingleXAxisDualLineChart'),
+      },
     ],
   },
 ]
