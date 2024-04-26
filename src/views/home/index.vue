@@ -28,7 +28,7 @@ export default {
   background: url('@/assets/ceremonial2.jpg') no-repeat;
   background-size: 100%;
   .modules {
-    width: 100px;
+    min-width: 100px;
     height: 80px;
     text-align: center;
     line-height: 80px;

@@ -11,4 +11,8 @@ export const routers = [
     key: 3,
     name: 'eCharts',
   },
+  {
+    key: 4,
+    name: 'selector',
+  },
 ]

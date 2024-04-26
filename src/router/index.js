@@ -48,6 +48,10 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/selector',
+    component: () => import('@/views/selector'),
+  },
 ]
 
 const router = new VueRouter({
