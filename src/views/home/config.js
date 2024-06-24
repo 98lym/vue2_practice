@@ -15,4 +15,8 @@ export const routers = [
     key: 4,
     name: 'selector',
   },
+  {
+    key: 5,
+    name: 'flowChart',
+  },
 ]

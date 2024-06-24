@@ -52,6 +52,10 @@ const routes = [
     path: '/selector',
     component: () => import('@/views/selector'),
   },
+  {
+    path: '/flowChart',
+    component: () => import('@/views/flowChart'),
+  },
 ]
 
 const router = new VueRouter({

@@ -26,7 +26,7 @@ export default {
   box-sizing: border-box; // 将 padding 和 border 包含在元素的总宽度和高度内，从而不影响元素的大小
   padding: 20px;
   background: url('@/assets/ceremonial2.jpg') no-repeat;
-  background-size: 100%;
+  background-size: cover;
   .modules {
     min-width: 100px;
     height: 80px;
@@ -52,7 +52,7 @@ export default {
   right: 0;
   bottom: 0;
   background: url('@/assets/ceremonial2.jpg') no-repeat;
-  background-size: 100%;
+  background-size: cover;
   filter: blur(8px);
   opacity: 0.6;
 }
