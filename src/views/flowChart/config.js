@@ -158,78 +158,38 @@ export const data = {
         [0.5, 0],
       ],
     },
+    {
+      comboId: 'combo5',
+      id: 'node11',
+      anchorPoints: [
+        [0.5, 1],
+        [0.5, 0],
+      ],
+    },
+    {
+      comboId: 'combo6',
+      id: 'node12',
+      anchorPoints: [
+        [0.5, 1],
+        [0.5, 0],
+      ],
+    },
   ],
-  // nodes: [
-  //   {
-  //     id: 'node1',
-  //     label: 'rect1',
-  //     comboId: 'combo1',
-  //     anchorPoints: [
-  //       [0, 0.5],
-  //       [1, 0.5],
-  //     ],
-  //   },
-  //   {
-  //     id: 'node2',
-  //     label: 'rect2',
-  //     comboId: 'combo1',
-  //     anchorPoints: [
-  //       [0, 0.5],
-  //       [1, 0.5],
-  //     ],
-  //   },
-  //   {
-  //     id: 'node3',
-  //     label: 'rect3',
-  //     comboId: 'combo1',
-  //     anchorPoints: [
-  //       [0, 0.5],
-  //       [1, 0.5],
-  //     ],
-  //   },
-  //   {
-  //     id: 'node4',
-  //     label: 'rect4',
-  //     comboId: 'combo2',
-  //     anchorPoints: [
-  //       [0, 0.5],
-  //       [1, 0.5],
-  //     ],
-  //   },
-  //   {
-  //     id: 'node5',
-  //     label: 'rect5',
-  //     comboId: 'combo2',
-  //     anchorPoints: [
-  //       [0, 0.5],
-  //       [1, 0.5],
-  //     ],
-  //   },
-  //   {
-  //     id: 'node6',
-  //     label: 'rect6',
-  //     comboId: 'combo3',
-  //     anchorPoints: [
-  //       [0, 0.5],
-  //       [1, 0.5],
-  //     ],
-  //   },
-  // ],
   edges: [
-    {
-      id: 'edge2',
-      source: 'node4',
-      target: 'node6',
-      sourceAnchor: 0,
-      targetAnchor: 1,
-    },
-    {
-      id: 'edge1',
-      source: 'node1',
-      target: 'node6',
-      sourceAnchor: 0,
-      targetAnchor: 1,
-    },
+    // {
+    //   id: 'edge2',
+    //   source: 'node4',
+    //   target: 'node6',
+    //   sourceAnchor: 0,
+    //   targetAnchor: 1,
+    // },
+    // {
+    //   id: 'edge1',
+    //   source: 'node1',
+    //   target: 'node6',
+    //   sourceAnchor: 0,
+    //   targetAnchor: 1,
+    // },
     {
       id: 'edge111',
       source: 'node1',
@@ -241,6 +201,27 @@ export const data = {
       id: 'edge3',
       source: 'node2',
       target: 'node8',
+      sourceAnchor: 0,
+      targetAnchor: 1,
+    },
+    {
+      id: 'edge121',
+      source: 'node7',
+      target: 'node11',
+      sourceAnchor: 0,
+      targetAnchor: 1,
+    },
+    {
+      id: 'edge1211',
+      source: 'node10',
+      target: 'node4',
+      sourceAnchor: 0,
+      targetAnchor: 1,
+    },
+    {
+      id: 'edge12112',
+      source: 'node10',
+      target: 'node12',
       sourceAnchor: 0,
       targetAnchor: 1,
     },
@@ -259,6 +240,12 @@ export const data = {
     },
     {
       id: 'combo4',
+    },
+    {
+      id: 'combo5',
+    },
+    {
+      id: 'combo6',
     },
   ],
 }

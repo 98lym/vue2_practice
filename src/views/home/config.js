@@ -19,4 +19,8 @@ export const routers = [
     key: 5,
     name: 'flowChart',
   },
+  {
+    key: 6,
+    name: 'coordinate',
+  },
 ]

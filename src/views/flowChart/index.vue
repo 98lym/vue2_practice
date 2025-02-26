@@ -115,6 +115,7 @@ export default {
               ],
               stroke: 'steelblue',
               radius: 10,
+              // opacity: 0,
               endArrow: true,
             },
             // 在 G6 3.3 及之后的版本中，必须指定 name，可以是任意字符串，但需要在同一个自定义元素类型中保持唯一性
@@ -146,6 +147,9 @@ export default {
             }
           )
         },
+        // eslint-disable-next-line no-irregular-whitespace
+        //　　不错，经过我几天的教导比萨尔党。那个路易是聪明多了。一次就能听懂我的暗示。乌米安满意地端起酒杯，喝了口视觉效果极佳的绿色液体。
+
       })
       G6.registerNode(
         'dom-node',
@@ -158,7 +162,8 @@ export default {
                 x: 85,
                 y: 0,
                 fontWeight: 400,
-                opacity: 0,
+                opacity: 1,
+                cursor: 'pointer',
                 shadowColor: 'blue',
               },
               name: 'circle-shape',
