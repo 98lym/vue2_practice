@@ -46,6 +46,11 @@ const routes = [
         name: 'singleXAxisDualLineChart',
         component: () => import('@/views/eCharts/components/SingleXAxisDualLineChart'),
       },
+      {
+        path: 'threeDimensionalPieChart',
+        name: 'threeDimensionalPieChart',
+        component: () => import('@/views/eCharts/components/ThreeDimensionalPieChart'),
+      },
     ],
   },
   {
@@ -59,6 +64,10 @@ const routes = [
   {
     path: '/coordinate',
     component: () => import('@/views/coordinate'),
+  },
+  {
+    path: '/largeScreen',
+    component: () => import('@/views/largeScreen'),
   },
 ]
 

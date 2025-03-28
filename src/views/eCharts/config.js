@@ -24,4 +24,9 @@ export const routers = [
     name: 'singleXAxisDualLineChart',
     implication: '👉 单x轴双折线图',
   },
+  {
+    key: 5,
+    name: 'threeDimensionalPieChart',
+    implication: '👉 立体圆环饼图',
+  },
 ]

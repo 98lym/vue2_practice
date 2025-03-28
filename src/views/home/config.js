@@ -23,4 +23,8 @@ export const routers = [
     key: 6,
     name: 'coordinate',
   },
+  {
+    key: 7,
+    name: 'largeScreen',
+  },
 ]
